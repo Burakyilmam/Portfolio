@@ -1,0 +1,59 @@
+﻿@using Portfolio.Models
+@using System.Globalization;
+@model IEnumerable<Education>
+
+@foreach (var item in Model)
+{
+    <div class="row mb-4">
+        <div class="col-sm-3" id="date">
+            @TurkishMonthYear(item.StartDate) @TurkishMonthYear(item.EndDate)
+        </div>
+        @if (item == Model.First())
+        {
+            <div class="col-1" id="last">
+                <div id="dot"></div>
+                @if (item == Model.Last())
+                {
+
+                }
+                else
+                {
+                    <div id="line"></div>
+                }
+            </div>
+            <div class="col-sm-8">
+                <b class="text-success">@item.Name</b>
+                <br>
+                <h6>@item.Department</h6>
+            </div>
+        }
+        else
+        {
+            <div class="col-1">
+                <div id="dot"></div>
+                @if (item == Model.Last())
+                {
+
+                }
+                else
+                {
+                    <div id="line"></div>
+                }
+            </div>
+            <div class="col-sm-8">
+                <b class="text-success">@item.Name</b>
+                <br>
+                <h6>@item.Department</h6>
+            </div>
+        }
+    </div>
+}
+<script>
+    @functions {
+        string TurkishMonthYear(DateTime date)
+        {
+            var turkishCulture = new CultureInfo("tr-TR");
+            return $"{turkishCulture.DateTimeFormat.GetMonthName(date.Month)} {date.Year}";
+        }
+    }
+</script>

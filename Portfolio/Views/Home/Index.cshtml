@@ -13,183 +13,25 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row" id="ust">
-            <div class="col-md-6 order-md-1 order-2" id="yazi">
-                <div class="col-md-12 text-center" id="name">Burak Yılmam</div>
-                <div class="col-md-12 text-center" id="title">Web Developer & Software Developer</div>
-                <div class="col-md-12 pl-4" id="text">HTML , CSS , Javascript ,Bootsrap , .NET/.NET Core MVC , EntityFramework , MSSQL , Uyumlu Web Tasarımı ve Java programlama teknolojilerini kullanmaktayım. Python , Numpy , Pandas  , PostgreSQL , Ardunio ve Selenium teknolojileri hakkında bilgi sahibiyim</div>
-                <div id="hrefs" class="col-12">
-                    <a href="https://api.whatsapp.com/send/?phone=905394398213&text&type=phone_number&app_absent=0">
-                        <i class="fa fa-whatsapp"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/burak-yılmam-6a21191a7/">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Burakyilmam">
-                        <i class="fa fa-github"></i>
-                    </a>
-                    <a href="https://www.youtube.com/burakylmam6177/playlists">
-                        <i class="fa fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 text-center order-md-2 order-1" id="foto">
-                <img width="500" height="500" src="https://avatars.githubusercontent.com/u/61635780?v=4">
-            </div>
-        </div>
+        @await Component.InvokeAsync("ListInfo")
         <div class="row">
             <div class="col-md-4 mt-2">
                 <h3 class="col-12 mt-2 text-center">
-                    Yetenekler</h1>
-
-                    <img class="" width="40" height="30" src="https://cdn-icons-png.flaticon.com/128/732/732212.png" alt="HTML Logo" width="30" height="20">
-                    <span>HTML</span>
-                    <div class="progress mt-1" style="height: 20px;">
-                        <div id="element10" class="progress-bar mb-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-                    </div>
-
-                    <img width="40" height="30" src="https://cdn-icons-png.flaticon.com/128/5968/5968242.png" alt="CSS Logo" width="30" height="20">
-                    <span>CSS</span>
-                    <div class="progress mt-1" style="height: 20px;">
-                        <div id="element9" class="progress-bar mb-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-                    </div>
-
-                    <img width="40" height="30" src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="JS Logo" width="30" height="20">
-                    <span>Javascript</span>
-                    <div class="progress mt-1" style="height: 20px;">
-                        <div id="element8" class="progress-bar mb-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-                    </div>
-
-                    <img width="40" height="30" src="https://cdn-icons-png.flaticon.com/128/6132/6132221.png" alt="C# Logo" width="30" height="20">
-                    <span>C#</span>
-                    <div class="progress mt-1" style="height: 20px;">
-                        <div id="element7" class="progress-bar mb-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-                    </div>
-
-                    <img width="40" height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1024px-.NET_Core_Logo.svg.png" alt=".NET Core Logo">
-                    <span>.NET Core</span>
-                    <div class="progress mt-1" style="height: 20px;">
-                        <div id="element6" class="progress-bar mb-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-                    </div>
-
-                    <img width="40" height="30" src="https://w7.pngwing.com/pngs/578/816/png-transparent-java-class-file-java-platform-standard-edition-java-development-kit-java-runtime-environment-coffee-jar-text-class-orange-thumbnail.png" alt="Java Logo" width="30" height="20">
-                    <span>Java</span>
-                    <div class="progress mt-1" style="height: 20px;">
-                        <div id="element5" class="progress-bar mb-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-                    </div>
-
-                    <img width="40" height="30" src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png" alt="Bootsrap Logo" width="30" height="20">
-                    <span>Bootsrap</span>
-                    <div class="progress mt-1" style="height: 20px;">
-                        <div id="element4" class="progress-bar mb-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">%0</div>
-                    </div>
-
-                    <img width="40" height="30" src="https://miro.medium.com/v2/resize:fit:800/1*3kqmR2q4TFsdFX71DGbQZQ.png" alt="Entityframework Logo" width="30" height="20">
-                    <span>Entityframework</span>
-                    <div class="progress mt-1" style="height: 20px;">
-                        <div id="element3" class="progress-bar mb-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-                    </div>
-
-                    <img width="40" height="30" src="data:image/png;base64,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" alt="MSSQL Logo" width="30" height="20">
-                    <span>MSSQL</span>
-                    <div class="progress mt-1" style="height: 20px;">
-                        <div id="element2" class="progress-bar mb-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-                    </div>
-
-                    <img width="40" height="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMpnGi_CUJbErjTtT091V3MMR5nHlo_UBkPQ&usqp=CAU" alt="Microsoft Office Logo" width="30" height="20">
-                    <span>Microsoft Office</span>
-                    <div class="progress mt-1" style="height: 20px;">
-                        <div id="element1" class="progress-bar mb-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-                    </div>
+                    Yetenekler
+                </h3>
+                @await Component.InvokeAsync("ListLanguage")
             </div>
             <div class="col-md-8 mt-2">
                 <h2 class="col-12 text-center">
                     Tecrübeler
                 </h2>
-                <div class="row">
-                    <div class="col-sm-3" id="date">
-                        Şubat 2022
-                        Şubat 2023
-                    </div>
-                    <div class="col-1" id="last">
-                        <div id="dot"></div>
-                        <div id="line"></div>
-                    </div>
-                    <div class="col-sm-8">
-                        <b class="text-success">Yedek Subay - Proje Subayı</b>
-                        <br>
-                        <h5>
-                            Milli Savunma Bakanlığı Teknik Hizmetler Genel Müdürlüğü</h3>
-                            Kodlandırma şubesinde HAVELSAN firmasının geliştirdiği DOKU sistemini kullanarak NATO envanterine ürün girişi ve envanterdeki ürünlerin kontrolü yapıldı. DOKU sistemi üzerindeki hatalar tespit edilerek HAVELSAN yetkililerine bildirildi.
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3" id="date">
-                        Şubat 2022
-                        Şubat 2023
-                    </div>
-                    <div class="col-1">
-                        <div id="dot"></div>
-                        <div id="line"></div>
-                    </div>
-                    <div class="col-sm-8">
-                        <b class="text-success">Yazılım Stajyeri</b>
-                        <br>
-                        Milli Savunma Bakanlığı Teknik Hizmetler Genel Müdürlüğü
-                        <br>
-                        Kodlandırma şubesinde HAVELSAN firmasının geliştirdiği DOKU sistemini kullanarak NATO envanterine ürün girişi ve envanterdeki ürünlerin kontrolü yapıldı. DOKU sistemi üzerindeki hatalar tespit edilerek HAVELSAN yetkililerine bildirildi.
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3" id="date">
-                        Şubat 2022
-                        Şubat 2023
-                    </div>
-                    <div class="col-1">
-                        <div id="dot"></div>
-                    </div>
-                    <div class="col-sm-8">
-                        <b class="text-success">Donanım Stajyeri</b>
-                        <br>
-                        Milli Savunma Bakanlığı Teknik Hizmetler Genel Müdürlüğü
-                        <br>
-                        Kodlandırma şubesinde HAVELSAN firmasının geliştirdiği DOKU sistemini kullanarak NATO envanterine ürün girişi ve envanterdeki ürünlerin kontrolü yapıldı. DOKU sistemi üzerindeki hatalar tespit edilerek HAVELSAN yetkililerine bildirildi.
-                    </div>
-
-                </div>
+                @await Component.InvokeAsync("ListExperience")
                 <h2 class="col-12 text-center">
                     Eğitim
                 </h2>
-                <div class="row mb-4">
-                    <div class="col-sm-3" id="date">
-                        Şubat 2016 Şubat 2021
-                    </div>
-                    <div class="col-1" id="last">
-                        <div id="dot"></div>
-                        <div id="line"></div>
-                    </div>
-                    <div class="col-sm-8">
-                        <b class="text-success">Kütahya Dumlupınar Üniversitesi</b>
-                        <br>
-                        Bilgisayar Mühendisliği
-                    </div>
-                </div>
-                <div class="row pb-4">
-                    <div class="col-sm-3" id="date">
-                        Şubat 2016 Şubat 2021
-                    </div>
-                    <div class="col-1">
-                        <div id="dot"></div>
-                    </div>
-                    <div class="col-sm-8">
-                        <b class="text-success">Hüseyin Sungur Anadolu Lisesi</b>
-                        <br>
-                        Bilgisayar Mühendisliği
-                    </div>
-                </div>
+                @await Component.InvokeAsync("ListEducation")
             </div>
         </div>
     </div>
-    <script src="~/js/progress.js"></script>
 </body>
 </html>

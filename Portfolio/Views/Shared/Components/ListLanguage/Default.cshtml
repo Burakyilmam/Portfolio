@@ -1,0 +1,11 @@
+﻿@using Portfolio.Models;
+@model IEnumerable<Language>
+@foreach (var item in Model)
+{
+    <img class="" width="40" height="30" src="@item.LogoUrl" alt="HTML Logo">
+    <span>@item.Name</span>
+    <div class="progress mt-1" style="height: 20px;">
+        <div id="@item.elementId" class="progress-bar mb-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
+    </div>
+}
+<script src="~/js/progress.js"></script>

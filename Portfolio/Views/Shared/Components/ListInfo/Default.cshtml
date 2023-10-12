@@ -1,0 +1,29 @@
+﻿﻿@using Portfolio.Models
+@model IEnumerable<Info>
+@foreach(var item in Model)
+{
+    <div class="row" id="ust">
+        <div class="col-md-6 order-md-1 order-2" id="yazi">
+            <div class="col-md-12 text-center" id="name">@item.Name</div>
+            <div class="col-md-12 text-center" id="title">@item.Title</div>
+            <div class="col-md-12 pl-4" id="text">@item.Description</div>
+            <div id="hrefs" class="col-12">
+                <a href="@item.WhatsappUrl">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+                <a href="@item.LinkedinUrl">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="@item.GithubUrl">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="@item.YoutubeUrl">
+                    <i class="fa fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 text-center order-md-2 order-1" id="foto">
+            <img width="500" height="500" src="@item.ImageUrl">
+        </div>
+    </div>
+}
