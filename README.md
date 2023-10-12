@@ -1,1 +1,1 @@
-# HTML , CSS , Javascript ve Bootsrap kullanılarak oluşturulmuş statik portföy sitesidir.
+# .NET Core 6 , HTML , CSS , Javascript , Bootsrap ve MSSQL kullanılarak oluşturulmuş portföy sitesidir.
